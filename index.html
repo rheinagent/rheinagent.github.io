@@ -44,9 +44,14 @@ h2{font-size:1.6rem;line-height:1.25;margin:0 0 8px;letter-spacing:-.005em}
 a.card{display:block;color:inherit;text-decoration:none;transition:transform .15s,box-shadow .15s,border-color .15s}
 a.card:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(13,39,64,.1);border-color:#bcd0e0}
 a.card:focus-visible{outline:3px solid #8cc0ea;outline-offset:3px}
+.prods{grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
+.prod{padding:0;overflow:hidden}
+.prod img{display:block;width:100%;height:auto;aspect-ratio:5/4;object-fit:cover;background:#e6edf3;border-bottom:1px solid var(--line)}
+.prod .pt{padding:16px 18px 18px}
+.prod h3{margin:0 0 6px}
 .more{display:inline-block;margin-top:14px;color:var(--blue);font-weight:600;font-size:.95rem}
 .books{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-.book{display:flex;gap:16px;align-items:stretch}
+a.book{display:flex;gap:16px;align-items:stretch}
 .cover{flex:0 0 92px;border-radius:6px;background:linear-gradient(170deg,#0d2740,#1f6fb2);color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:10px;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;min-height:132px}
 .cover b{display:block;font-size:.95rem;letter-spacing:.02em;line-height:1.15;margin-bottom:4px}
 .cover.two{background:linear-gradient(170deg,#143a5c,#2f9e63)}
@@ -85,10 +90,15 @@ footer a{color:var(--muted)}
 <section id="vorlagen">
 <h2>Vorlagen und Planer auf Etsy</h2>
 <p class="sub">Sofort als Download. Alle Produkte gibt es im Etsy-Shop von RheinAgent.</p>
-<div class="grid">
-<a class="card" href="https://www.etsy.com/shop/RheinAgent" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span><h3>Excel-Vorlagen für Selbstständige</h3><p>Zum Beispiel für Angebote und Aufträge, Kundenprojekte und die Finanzplanung.</p><span class="more">Im Shop ansehen &rarr;</span></a>
-<a class="card" href="https://www.etsy.com/shop/RheinAgent" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><h3>Wochen- und Alltagsplaner</h3><p>Planer für Woche, Essen und Content, auch in einer Version für den Alltag mit ADHS.</p><span class="more">Im Shop ansehen &rarr;</span></a>
-<a class="card" href="https://www.etsy.com/shop/RheinAgent" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><h3>Planer für den Schichtdienst</h3><p>Der Schichtplaner für die Pflege, in Deutsch und Englisch.</p><span class="more">Im Shop ansehen &rarr;</span></a>
+<div class="grid prods">
+<a class="card prod" href="https://www.etsy.com/shop/RheinAgent" rel="noopener"><img src="img/gentle-week.jpg" alt="Vorschau: The Gentle Week" width="800" height="640"><div class="pt"><h3>The Gentle Week</h3><p>ADHS-freundlicher Wochenplaner, 72 ausfüllbare Seiten</p><span class="more">Auf Etsy ansehen &rarr;</span></div></a>
+<a class="card prod" href="https://www.etsy.com/shop/RheinAgent" rel="noopener"><img src="img/shift-flow.jpg" alt="Vorschau: Shift Flow" width="800" height="640"><div class="pt"><h3>Shift Flow</h3><p>Schichtplaner für die Pflege, 67 Seiten, ohne Patientendaten</p><span class="more">Auf Etsy ansehen &rarr;</span></div></a>
+<a class="card prod" href="https://www.etsy.com/shop/RheinAgent" rel="noopener"><img src="img/field-notes-90.jpg" alt="Vorschau: Field Notes / 90" width="800" height="640"><div class="pt"><h3>Field Notes / 90</h3><p>90-Tage-Contentplaner als Excel und 55 Seiten PDF</p><span class="more">Auf Etsy ansehen &rarr;</span></div></a>
+<a class="card prod" href="https://www.etsy.com/shop/RheinAgent" rel="noopener"><img src="img/project-dossier.jpg" alt="Vorschau: The Project Dossier" width="800" height="640"><div class="pt"><h3>The Project Dossier</h3><p>Projekt-Set für Freelancer, 26 Seiten, vom Angebot bis zur Rechnung</p><span class="more">Auf Etsy ansehen &rarr;</span></div></a>
+<a class="card prod" href="https://www.etsy.com/shop/RheinAgent" rel="noopener"><img src="img/kitchen-loop.jpg" alt="Vorschau: The Kitchen Loop" width="800" height="640"><div class="pt"><h3>The Kitchen Loop</h3><p>Essensplaner und Vorratsliste, 41 Seiten</p><span class="more">Auf Etsy ansehen &rarr;</span></div></a>
+<a class="card prod" href="https://www.etsy.com/shop/RheinAgent" rel="noopener"><img src="img/creator-bundle.jpg" alt="Vorschau: Creator &amp; Freelancer Bundle" width="800" height="640"><div class="pt"><h3>Creator &amp; Freelancer Bundle</h3><p>Contentplaner und Projekt-Set in einem Download, 81 Seiten plus Excel</p><span class="more">Auf Etsy ansehen &rarr;</span></div></a>
+<a class="card prod" href="https://www.etsy.com/shop/RheinAgent" rel="noopener"><img src="img/angebots-tracker.jpg" alt="Vorschau: Angebots-Tracker für Freelancer" width="800" height="640"><div class="pt"><h3>Angebots-Tracker für Freelancer</h3><p>Excel-Arbeitsmappe für Angebote, Auftragswerte und Follow-ups</p><span class="more">Auf Etsy ansehen &rarr;</span></div></a>
+<a class="card prod" href="https://www.etsy.com/shop/RheinAgent" rel="noopener"><img src="img/adhs-finanzplaner.jpg" alt="Vorschau: ADHS Finanzplaner für Selbstständige" width="800" height="640"><div class="pt"><h3>ADHS Finanzplaner für Selbstständige</h3><p>Excel ohne Makros für Einnahmen, Rechnungen und Fälligkeiten</p><span class="more">Auf Etsy ansehen &rarr;</span></div></a>
 </div>
 <p><a class="btn primary" style="margin-top:22px" href="https://www.etsy.com/shop/RheinAgent" rel="noopener">Zum Etsy-Shop</a></p>
 </section>
